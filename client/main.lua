@@ -78,13 +78,13 @@ Citizen.CreateThread(function() -- Enlevez le kevlar sur le skin
             usekevlar = false
             ESX.ShowNotification("Vous n'avez plus de kevlar !") -- Notification pour avertir le joueur
              TriggerEvent('skinchanger:getSkin', function(skin) -- Retirer le kevlar sur le skin 
-              if skin.sex == 0 then -- Retirer le kevlar sur le skin Homme
+              if skin.sex == 0 then -- Retirer le kevlar sur le skin homme
                      TriggerEvent('skinchanger:loadSkin', {
                      sex          = 0,
                      bproof_1     = 0,
                      bproof_2     = 0,
             })
-                else -- Revlar sur le skin Homme
+                else -- Revlar sur le skin femme
                     TriggerEvent('skinchanger:loadSkin', {
                      sex          = 1,
                      bproof_1     = 0,
